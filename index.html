@@ -1,68 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learn with CAN!</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn with CAN!</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
+    <header class="header">
+        <h1>Learn with CAN!</h1>
+        <p>Tu forma interactiva de aprender a usar <strong>can</strong> y <strong>can’t</strong> en inglés</p>
+    </header>
 
-    <!-- 🏠 Welcome Page -->
-    <section id="welcome" class="card active">
-      <h1>Welcome to <span>Learn with CAN!</span></h1>
-      <p>This interactive platform will help you learn how to use <b>can</b> and <b>can’t</b> in English through lessons, videos, and quizzes.</p>
-      <button onclick="nextSection('theory')">Start Learning →</button>
-    </section>
+    <main>
+        <!-- SECCIÓN TEORÍA -->
+        <section class="theory">
+            <h2>📘 Comprendiendo “Can” y “Can’t”</h2>
+            <p>
+                En inglés, el verbo modal <strong>can</strong> se utiliza para hablar de
+                <strong>habilidades</strong>, <strong>posibilidades</strong> y
+                <strong>permisos</strong>.  
+                Su forma negativa es <strong>can’t</strong> (contracción de <em>cannot</em>) y se usa para expresar
+                <strong>incapacidad</strong>, <strong>imposibilidad</strong> o <strong>prohibición</strong>.
+            </p>
 
-    <!-- 📘 Theory Section -->
-    <section id="theory" class="card">
-      <h2>📘 Learn the Theory</h2>
-      <p><b>CAN</b> is used to express ability or permission:</p>
-      <ul>
-        <li>I can play the guitar.</li>
-        <li>She can speak English.</li>
-      </ul>
+            <h3>🧩 Estructura</h3>
+            <p>
+                La estructura gramatical con <strong>can</strong> y <strong>can’t</strong> es muy sencilla:
+            </p>
+            <pre> Sujeto + can/can’t + verbo base + complemento </pre>
+            <p><em>Ejemplos:</em></p>
+            <ul>
+                <li>I can swim. → Yo puedo nadar.</li>
+                <li>She can’t drive. → Ella no puede conducir.</li>
+            </ul>
 
-      <p><b>CAN’T</b> (cannot) is used to express inability or prohibition:</p>
-      <ul>
-        <li>I can’t fly.</li>
-        <li>He can’t drive a car.</li>
-      </ul>
+            <h3>✅ Usos de “Can”</h3>
+            <ul>
+                <li><strong>Habilidad:</strong> I can play the piano. (Sé tocar el piano)</li>
+                <li><strong>Posibilidad:</strong> We can go to the park tomorrow. (Podemos ir al parque mañana)</li>
+                <li><strong>Permiso:</strong> You can use my phone. (Puedes usar mi teléfono)</li>
+            </ul>
 
-      <h3>🎥 Watch and Learn</h3>
-      <div class="videos">
-        <iframe src="https://www.youtube.com/embed/GtWJ3yZy28c" title="Can and Can't - English Grammar" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/ZwI1GxkZjQ4" title="Learn English Modal Verbs" allowfullscreen></iframe>
-      </div>
+            <h3>🚫 Usos de “Can’t”</h3>
+            <ul>
+                <li><strong>Incapacidad:</strong> I can’t speak Japanese. (No puedo hablar japonés)</li>
+                <li><strong>Imposibilidad:</strong> Pigs can’t fly. (Los cerdos no pueden volar)</li>
+                <li><strong>Prohibición:</strong> You can’t park here. (No puedes estacionar aquí)</li>
+            </ul>
 
-      <button onclick="nextSection('quiz')">→ Go to Practice</button>
-    </section>
+            <h3>❓ Preguntas con “Can”</h3>
+            <p>
+                Para formular preguntas, se invierte el orden del sujeto y el verbo modal:
+            </p>
+            <pre> Can + sujeto + verbo base + complemento? </pre>
+            <ul>
+                <li>Can you dance? → ¿Puedes bailar?</li>
+                <li>Can he drive a car? → ¿Él puede conducir un auto?</li>
+            </ul>
 
-    <!-- 🧩 Quiz Section -->
-    <section id="quiz" class="card">
-      <h2>🧩 Practice: Quizzes</h2>
+            <p>
+                Las respuestas cortas más comunes son:
+            </p>
+            <ul>
+                <li>Yes, I can. → Sí, puedo.</li>
+                <li>No, I can’t. → No, no puedo.</li>
+            </ul>
 
-      <h3>1️⃣ Multiple Choice</h3>
-      <div id="multiple-choice"></div>
+            <p>
+                En resumen, <strong>can</strong> y <strong>can’t</strong> se usan con el verbo base (sin “to”) y no cambian con el sujeto.  
+                Ejemplo:  
+                <em>I can run</em> | <em>He can run</em> | <em>They can run</em> ✅
+            </p>
+        </section>
 
-      <h3>2️⃣ Writing Practice</h3>
-      <div id="writing"></div>
+        <!-- SECCIÓN VIDEOS -->
+        <section class="videos">
+            <h2>🎥 Aprende con videos</h2>
+            <p>
+                Observa estos videos cortos para comprender mejor cómo se usa “can” y “can’t” en diferentes contextos.
+            </p>
+            <div class="video-grid">
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/_YzACuc1iTk" title="Video 1" allowfullscreen></iframe>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/ZtBzWm8j0T0" title="Video 2" allowfullscreen></iframe>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/mwCxYjB2ZpI" title="Video 3" allowfullscreen></iframe>
+            </div>
+        </section>
 
-      <p id="score"></p>
-      <button id="toResults" onclick="showResults()" disabled>Show Results →</button>
-    </section>
+        <!-- SECCIÓN BOTÓN DE PRÁCTICA -->
+        <section class="start">
+            <h2>🚀 ¡Listo para practicar!</h2>
+            <p>Haz clic en el siguiente botón para comenzar con las actividades interactivas.</p>
+            <a href="quiz-selection-1.html" class="btn">Comenzar práctica</a>
+        </section>
+    </main>
 
-    <!-- 🏁 Final Section -->
-    <section id="results" class="card">
-      <h2>🎉 Great job!</h2>
-      <p id="resultText"></p>
-      <h3 id="finalScore"></h3>
-      <button onclick="restart()">↺ Restart</button>
-    </section>
-  </div>
-
-  <script src="script.js"></script>
+    <footer>
+        <p>© 2025 Learn with CAN! | Aplicación educativa para el aprendizaje del inglés</p>
+    </footer>
 </body>
 </html>

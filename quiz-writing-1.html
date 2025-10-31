@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz de Escritura 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header"><h1>Quiz de Escritura 1</h1></header>
+
+  <section>
+    <div class="question">
+      <p>Escribe una oración usando “can” para hablar de una habilidad.</p>
+      <input id="q1" type="text" placeholder="Escribe aquí..." />
+      <button onclick="checkWritingAnswer('q1','I can swim.')">Comprobar</button>
+      <p id="q1-result"></p>
+    </div>
+
+    <div class="question">
+      <p>Escribe una oración negativa con “can’t”.</p>
+      <input id="q2" type="text" placeholder="Escribe aquí..." />
+      <button onclick="checkWritingAnswer('q2','I can’t fly.')">Comprobar</button>
+      <p id="q2-result"></p>
+    </div>
+
+    <div class="question">
+      <p>Escribe una oración con “can” sobre otra persona.</p>
+      <input id="q3" type="text" placeholder="Escribe aquí..." />
+      <button onclick="checkWritingAnswer('q3','She can dance.')">Comprobar</button>
+      <p id="q3-result"></p>
+    </div>
+
+    <p id="score"></p>
+    <a href="quiz-writing-2.html" class="btn">Siguiente Quiz</a>
+  </section>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz de Escritura 3</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header"><h1>Quiz de Escritura 3</h1></header>
+
+  <section>
+    <div class="question">
+      <p>Escribe una oración negativa sobre un animal.</p>
+      <input id="q1" type="text" placeholder="Escribe aquí..." />
+      <button onclick="checkWritingAnswer('q1','A dog can’t fly.')">Comprobar</button>
+      <p id="q1-result"></p>
+    </div>
+
+    <div class="question">
+      <p>Escribe una oración positiva sobre ti mismo.</p>
+      <input id="q2" type="text" placeholder="Escribe aquí..." />
+      <button onclick="checkWritingAnswer('q2','I can run fast.')">Comprobar</button>
+      <p id="q2-result"></p>
+    </div>
+
+    <div class="question">
+      <p>Escribe una oración con “can” sobre tus amigos.</p>
+      <input id="q3" type="text" placeholder="Escribe aquí..." />
+      <button onclick="checkWritingAnswer('q3','My friends can play soccer.')">Comprobar</button>
+      <p id="q3-result"></p>
+    </div>
+
+    <p id="score"></p>
+    <a href="index.html" class="btn">Volver al inicio</a>
+  </section>
+</body>
+</html>
