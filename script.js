@@ -15,6 +15,7 @@ function checkAnswer(button, isCorrect) {
 
   totalQuestions++;
   showScore();
+  saveScore();
 }
 
 function checkWritingAnswer(inputId, expected) {
@@ -33,9 +34,23 @@ function checkWritingAnswer(inputId, expected) {
 
   totalQuestions++;
   showScore();
+  saveScore();
 }
 
 function showScore() {
   const percent = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
-  document.getElementById("score").textContent = `Porcentaje de aciertos: ${percent}%`;
+  const scoreEl = document.getElementById("score");
+  if (scoreEl) {
+    scoreEl.textContent = `Porcentaje de aciertos: ${percent}%`;
+  }
+}
+
+function saveScore() {
+  const percent = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
+  localStorage.setItem("finalScore", percent);
+}
+
+function loadScore() {
+  const savedScore = localStorage.getItem("finalScore");
+  return savedScore ? parseInt(savedScore) : 0;
 }
