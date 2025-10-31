@@ -24,11 +24,11 @@ function checkWritingAnswer(inputId, expected) {
   const result = document.getElementById(inputId + "-result");
 
   if (userAnswer === expected.toLowerCase()) {
-    result.textContent = "✅ Correcto";
+    result.textContent = "Correcto";
     result.style.color = "green";
     correctAnswers++;
   } else {
-    result.textContent = "❌ Incorrecto";
+    result.textContent = "Incorrecto";
     result.style.color = "red";
   }
 
