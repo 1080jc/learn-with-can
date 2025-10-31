@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn with CAN!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- 🏠 Welcome Page -->
+    <section id="welcome" class="card active">
+      <h1>Welcome to <span>Learn with CAN!</span></h1>
+      <p>This interactive platform will help you learn how to use <b>can</b> and <b>can’t</b> in English through lessons, videos, and quizzes.</p>
+      <button onclick="nextSection('theory')">Start Learning →</button>
+    </section>
+
+    <!-- 📘 Theory Section -->
+    <section id="theory" class="card">
+      <h2>📘 Learn the Theory</h2>
+      <p><b>CAN</b> is used to express ability or permission:</p>
+      <ul>
+        <li>I can play the guitar.</li>
+        <li>She can speak English.</li>
+      </ul>
+
+      <p><b>CAN’T</b> (cannot) is used to express inability or prohibition:</p>
+      <ul>
+        <li>I can’t fly.</li>
+        <li>He can’t drive a car.</li>
+      </ul>
+
+      <h3>🎥 Watch and Learn</h3>
+      <div class="videos">
+        <iframe src="https://www.youtube.com/embed/GtWJ3yZy28c" title="Can and Can't - English Grammar" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/ZwI1GxkZjQ4" title="Learn English Modal Verbs" allowfullscreen></iframe>
+      </div>
+
+      <button onclick="nextSection('quiz')">→ Go to Practice</button>
+    </section>
+
+    <!-- 🧩 Quiz Section -->
+    <section id="quiz" class="card">
+      <h2>🧩 Practice: Quizzes</h2>
+
+      <h3>1️⃣ Multiple Choice</h3>
+      <div id="multiple-choice"></div>
+
+      <h3>2️⃣ Writing Practice</h3>
+      <div id="writing"></div>
+
+      <p id="score"></p>
+      <button id="toResults" onclick="showResults()" disabled>Show Results →</button>
+    </section>
+
+    <!-- 🏁 Final Section -->
+    <section id="results" class="card">
+      <h2>🎉 Great job!</h2>
+      <p id="resultText"></p>
+      <h3 id="finalScore"></h3>
+      <button onclick="restart()">↺ Restart</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
